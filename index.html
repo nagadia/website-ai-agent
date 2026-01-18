@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagadia - future Of Automation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="templatemo-nexaverse.css">
+<!-- 
+
+TemplateMo 603 Nexaverse
+
+https://templatemo.com/tm-603-nexaverse
+
+-->
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-ring"></div>
+        <div class="loading-text">Welcome On Nagadia...</div>
+    </div>
+
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header" id="mainHeader">
+            <div class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00f0ff"/>
+                            <stop offset="100%" style="stop-color:#ff00d4"/>
+                        </linearGradient>
+                    </defs>
+                    <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+                    <polygon points="50,20 80,37 80,63 50,80 20,63 20,37" fill="none" stroke="url(#logoGradient)" stroke-width="1.5" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="12" fill="url(#logoGradient)" opacity="0.3"/>
+                    <circle cx="50" cy="50" r="6" fill="url(#logoGradient)"/>
+                </svg>
+            </div>
+            <h1 class="brand-name">Nagadia</h1>
+            <p class="tagline">Ai Automation Redefined</p>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menuGrid">
+            <div class="menu-item initial-load" data-section="introduction">
+                <div class="menu-badge">IN</div>
+                <div class="menu-title">Introduction</div>
+            </div>
+            <div class="menu-item initial-load" data-section="services">
+                <div class="menu-badge">SV</div>
+                <div class="menu-title">Services</div>
+            </div>
+            <div class="menu-item initial-load" data-section="gallery">
+                <div class="menu-badge">GL</div>
+                <div class="menu-title">Gallery</div>
+            </div>
+            <div class="menu-item initial-load" data-section="testimonials">
+                <div class="menu-badge">TM</div>
+                <div class="menu-title">Testimonials</div>
+            </div>
+            <div class="menu-item initial-load" data-section="about">
+                <div class="menu-badge">AB</div>
+                <div class="menu-title">About</div>
+            </div>
+            <div class="menu-item initial-load" data-section="contact">
+                <div class="menu-badge">CT</div>
+                <div class="menu-title">Contact</div>
+            </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div id="contentArea">
+            <!-- Introduction Section -->
+            <div class="content-section" id="introduction">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>Nagadia</h3>
+                        <p>Ai Agents</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+                
+                <!-- Hero Banner -->
+                <div class="intro-hero">
+                    <div class="intro-hero-content">
+                        <span class="intro-badge">JAN. 2026</span>
+                        <h1 class="intro-headline">We Build Ai<br><span>Agents</span> That Matter</h1>
+                        <p class="intro-subtext">Direct intelligent Automation Fore Core Businesses Operations.</p>
+                        <div class="intro-cta-group">
+                            <button class="intro-cta-primary">Explore Our Work</button>
+                            <button class="intro-cta-secondary">Watch Showreel</button>
+                        </div>
+                    </div>
+                    <div class="intro-hero-visual">
+                        <div class="intro-floating-card card-1">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-text">Powered By Ai LLMs</span>
+                        </div>
+                        <div class="intro-floating-card card-2">
+                            <span class="card-icon">🎯</span>
+                            <span class="card-text">Analytics Systems </span>
+                        </div>
+                        <div class="intro-floating-card card-3">
+                            <span class="card-icon">🔒</span>
+                            <span class="card-text">Self-Evolving</span>
+                        </div>
+                        <div class="intro-orb"></div>
+                    </div>
+                </div>
+
+                <!-- Metrics Strip -->
+                <div class="intro-metrics">
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="50+">0</span>
+                        <span class="metric-label">Projects Delivered</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="98">0</span>
+                        <span class="metric-suffix">%</span>
+                        <span class="metric-label">Client Retention</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="12">0</span>
+                        <span class="metric-label">Countries</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value">24/7</span>
+                        <span class="metric-label">Global Support</span>
+                    </div>
+                </div>
+
+                <!-- Core Values -->
+                <div class="intro-values">
+                    <div class="value-card">
+                        <div class="value-number">01</div>
+                        <h3>Powered By Biggest AI LLMs</h3>
+                        <p>Powered By The World's Most Advanced Models including ChatGPT and Gemini Trained On Billions Of Data Points And vast Libraries Of knowledge To Ensure Robust , Error-Free Response Systems.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">02</div>
+                        <h3>Bevaioral Analytics & Insights</h3>
+                        <p>Gain Deep Insights into Customer Needs And Pain Points By Analyzing The Most The Most Frequent Questions And Patterns.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">03</div>
+                        <h3>Systems That Evolve</h3>
+                        <p>Your Ai Agents Don't Just Follow Instructions ; They Learn From Every Interaction. By Analyzing Every Question And Response , The System Identifies Patterns , Corrects it Own Errors , And Expands its knowledge Base Autonomously</p>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Preview -->
+                <div class="intro-tech">
+                    <p class="tech-label">Technologies Used In Systems</p>
+                    <div class="tech-marquee">
+                        <div class="tech-track">
+                            <span class="tech-item">Google Gemini </span>
+                            <span class="tech-item">ChatGPT</span>
+                            <span class="tech-item">Claude Code</span>
+                            <span class="tech-item">Sora</span>
+                            <span class="tech-item">Google Sheets</span>
+                            <span class="tech-item">My-SQL Data Base</span>
+                            <span class="tech-item">MongoDB Data Base</span>
+                            <span class="tech-item">Asp.Net Core</span>
+                            <span class="tech-item">Angular.js</span>
+                            <span class="tech-item">WhatsApp</span>
+                            <span class="tech-item">Telegram</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="content-section" id="services">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad2)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad2)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>Nagadia</h3>
+                        <p>Ai Automation</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Automation Services</p>
+                </div>
+
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="switchTab(this, 'development')">Agents</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'consulting')">Consulting</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'support')">Support</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="development">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/ai-optimized-templates.jpg" alt="AI Development">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Chat Agents</h4>
+                                        <p>Chat Agents Are Advanced Ai-Powered Assistants Designed To Handle Conversations , Support , Sales And Follow-Ups Automatically __ With Speed ,Accuracy, and Consistency.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/coding-screen.jpg" alt="Web Applications">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>intelligent Websites</h4>
+                                        <p>Proffesional Website Design Service Built on Strong Technical And Marketing Foundations , Directly Integrated With Your Own Ai Chat Agency. Transforming Your Website From A static ShowCase Into Afully intelligent Platform For Engagement , Sales , And Support That Operates Automatically 24/7.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+
+
+                        <div class="tab-pane" id="consulting">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/digital-strategy.jpg" alt="Digital Strategy">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Ai Growth Strategy</h4>
+                                        <p>Build Growth Plan  And Use Ai Correctly.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                               
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/process-optimized.jpg" alt="Process Optimization">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Automation Strategy</h4>
+                                        <p> Learn What You Need & Can To Automate.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="support">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/247-support.jpg" alt="24/7 Support">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>24/7 Phone Support</h4>
+                                        <p>Full Support Any Time (Email - Phone - WhatsApp - Telegram).</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/training-center.jpg" alt="Training">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Agents Support</h4>
+                                        <p>Monthly Support , Suggestions & Update.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/managed-service.jpg" alt="Managed Services">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Agents Data Base Support</h4>
+                                        <p>Develop Your Agents Data Places To Make Better Results.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Section -->
+            <div class="content-section" id="gallery">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad3)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad3)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>Nagadia - Ai Automation</h3>
+                        <p>Digital Excellence</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Our Portfolio</h2>
+                    <p class="section-subtitle">Explore our latest works</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+                    <button class="filter-btn" onclick="filterGallery('web', this)">Agents</button>
+                    <button class="filter-btn" onclick="filterGallery('mobile', this)">Websites</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- <div class="gallery-item" data-category="web">
+                        <img src="images/coding-screen.jpg" alt="Project 1">
+                        <div class="gallery-overlay">
+                            <h4>E-Commerce Platform</h4>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="images/ai-mobile-app.jpg" alt="Project 2">
+                        <div class="gallery-overlay">
+                            <h4>Fitness App</h4>
+                            <p>Mobile Development</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="images/brand-identity.jpg" alt="Project 3">
+                        <div class="gallery-overlay">
+                            <h4>Brand Identity</h4>
+                            <p>Design & Branding</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/managed-service.jpg" alt="Project 4">
+                        <div class="gallery-overlay">
+                            <h4>Analytics Dashboard</h4>
+                            <p>Web Application</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="images/ai-optimized-templates.jpg" alt="Project 5">
+                        <div class="gallery-overlay">
+                            <h4>Banking App</h4>
+                            <p>Mobile Development</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="images/digital-strategy.jpg" alt="Project 6">
+                        <div class="gallery-overlay">
+                            <h4>Startup Branding</h4>
+                            <p>Design & Identity</p>
+                        </div>
+                    </div>-->
+                </div> 
+            </div>
+
+            <!-- Testimonials Section -->
+            <div class="content-section" id="testimonials">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad4)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad4)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>Nagadia</h3>
+                        <p>Ai  Automation</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Client Stories</h2>
+                    <p class="section-subtitle">What our clients say about us</p>
+                </div>
+
+                <!-- <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Working with NexaVerse transformed our digital presence. Their innovative approach and attention to detail exceeded our expectations at every turn.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="Client 1">
+                            </div>
+                            <div class="author-info">
+                                <h5>Michael Chen</h5>
+                                <p>CEO, TechVentures</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The team's expertise in UX design helped us create an app that our users absolutely love. Our engagement metrics have increased by 200%.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Client 2">
+                            </div>
+                            <div class="author-info">
+                                <h5>Sarah Johnson</h5>
+                                <p>Product Director, InnovateCo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">From strategy to execution, NexaVerse delivered exceptional results. Their commitment to quality is unmatched in the industry.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="Client 3">
+                            </div>
+                            <div class="author-info">
+                                <h5>David Park</h5>
+                                <p>Founder, StartupHub</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The AI solutions they built for us have revolutionized our operations. We've seen a 40% increase in efficiency since implementation.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop" alt="Client 4">
+                            </div>
+                            <div class="author-info">
+                                <h5>Emily Zhang</h5>
+                                <p>COO, DataFlow Inc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- About Section -->
+            <div class="content-section" id="about">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad5)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad5)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>Nagadia</h3>
+                        <p>Ai Automation</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">Who We Are ?</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Where Future intelligence Meets Human Passion</h3>
+                        <p>At Nagadia , We Don't Just Write Code ; We Create a "Smart Heart" For Your Business That Beats 24/7 We Believe That Technology Was Created To Serve Humanity , Not To Complicate it.</p>
+                        <p>What Makes Us Different.</p>
+                        <p>Ai Agents That Truly Listen We don't Build Traditional "Bots" We innovate Ai Agents That Speak Your Customer's Language , Sense Their Needs And Provide instant Solutions That Build Trust From The Very First Moment .</p>
+                        <p>Websites That Reflect Your Identity : We Design Digital Platforms That Are More Than Just an Interface - They Are Ahome For Your Brand ; Fast Engaging , and Perfectly Integrated With Ai EcoSystem .</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about-our-team.jpg" alt="Our Team">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="content-section" id="contact">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad6)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad6)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>Nagadia</h3>
+                        <p>Automation AI</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Let's create something amazing together</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message"></textarea>
+                        </div>
+                        <button class="submit-btn">Send Message</button>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Egypt,Assyut,ElQusiya,Eltegara Street</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>nagadia.ai@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+20 1008033261</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="mainFooter">
+            <p>© 2026 Nagadia. Be different  By <a href="https://wa.me/201008033261" target="_blank">Saif Elnagady</a></p>
+        </footer>
+    </div>
+<script src="templatemo-nexa-scripts.js"></script>
+</body>
+</html>
