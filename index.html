@@ -609,6 +609,130 @@ https://templatemo.com/tm-603-nexaverse
   webhookUrl: 'https://nagadia.app.n8n.cloud/webhook/b96547e4-c377-4d50-838b-8097d2001661/chat'
  });
 </script>
+    skip to:contentpackage searchsign in
+Pro
+Teams
+Pricing
+Documentation
+npm
+Search packages
+Search
+@n8n/chat
+TypeScript icon, indicating that this package has built-in type declarations
+1.4.0 • Public • Published 6 days ago
+n8n Chat
+This is an embeddable Chat widget for n8n. It allows the execution of AI-Powered Workflows through a Chat window.
+
+Windowed Example n8n Chat Windowed
+
+Fullscreen Example n8n Chat Fullscreen
+
+Prerequisites
+Create a n8n workflow which you want to execute via chat. The workflow has to be triggered using a Chat Trigger node.
+
+Open the Chat Trigger node and add your domain to the Allowed Origins (CORS) field. This makes sure that only requests from your domain are accepted.
+
+See example workflow
+
+To use streaming responses, you need to enable the Streaming response response mode in the Chat Trigger node. See example workflow with streaming
+
+Make sure the workflow is Active.
+
+How it works
+Each Chat request is sent to the n8n Webhook endpoint, which then sends back a response.
+
+Each request is accompanied by an action query parameter, where action can be one of:
+
+loadPreviousSession - When the user opens the Chatbot again and the previous chat session should be loaded
+sendMessage - When the user sends a message
+Installation
+Open the Webhook node and replace YOUR_PRODUCTION_WEBHOOK_URL with your production URL. This is the URL that the Chat widget will use to send requests to.
+
+a. CDN Embed
+Add the following code to your HTML page.
+
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://nagadia.app.n8n.cloud/webhook/b96547e4-c377-4d50-838b-8097d2001661/chat'
+	});
+</script>
+b. Import Embed
+Install and save n8n Chat as a production dependency.
+
+npm install @n8n/chat
+Import the CSS and use the createChat function to initialize your Chat window.
+
+import '@n8n/chat/style.css';
+import { createChat } from '@n8n/chat';
+
+createChat({
+	webhookUrl: 'YOUR_PRODUCTION_WEBHOOK_URL'
+});
+Vue.js
+<script lang="ts" setup>
+// App.vue
+import { onMounted } from 'vue';
+import '@n8n/chat/style.css';
+import { createChat } from '@n8n/chat';
+
+onMounted(() => {
+	createChat({
+		webhookUrl: 'https://nagadia.app.n8n.cloud/webhook/b96547e4-c377-4d50-838b-8097d2001661/chat'
+	});
+});
+</script>
+<template>
+	<div></div>
+</template>
+React
+// App.tsx
+import { useEffect } from 'react';
+import '@n8n/chat/style.css';
+import { createChat } from '@n8n/chat';
+
+export const App = () => {
+	useEffect(() => {
+		createChat({
+			webhookUrl: 'https://nagadia.app.n8n.cloud/webhook/b96547e4-c377-4d50-838b-8097d2001661/chat'
+		});
+	}, []);
+
+	return (<div></div>);
+};
+
+createChat({
+	webhookUrl: '',
+	webhookConfig: {
+		method: 'POST',
+		headers: {}
+	},
+	target: '#n8n-chat',
+	mode: 'window',
+	chatInputKey: 'chatInput',
+	chatSessionKey: 'sessionId',
+	loadPreviousSession: true,
+	metadata: {},
+	showWelcomeScreen: false,
+	defaultLanguage: 'en',
+	initialMessages: [
+		'Welcome 👋',
+		'My name is Saif. Nagadia ai Assistant  Do you Have Ny Questions and How can I assist you today?'
+	],
+	i18n: {
+		en: {
+			title: 'Hi there! 👋',
+			subtitle: "Start a chat. We're here to help you 24/7.",
+			footer: '',
+			getStarted: 'New Conversation',
+			inputPlaceholder: 'Type your question..',
+		},
+	},
+	enableStreaming: false,
+});
 </body>
 
 </html>
+
