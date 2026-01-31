@@ -294,4 +294,86 @@ https://templatemo.com/tm-594-nexus-flow
 </body>
 </html>
 
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+
+
+<style>
+        :root {
+                --chat--color-primary: black;
+                --chat--color-primary-shade-50: black;
+                --chat--color-primary-shade-100: black;
+
+
+                --chat--color-secondary: #0f172a; /* خلفية المستخدم */
+                --chat--color-secondary-shade-50: #1e293b;
+
+
+                --chat--color-white: #ffffff;
+                --chat--color-light: #1a1a1a;
+                --chat--color-light-shade-50: #111827;
+                --chat--color-light-shade-100: #1f2937;
+
+
+                --chat--color-medium: #2c2c2c;
+                --chat--color-dark: #000000;
+
+
+                --chat--message--bot--background: var(--chat--color-primary);
+                --chat--message--bot--color: var(--chat--color-white);
+                --chat--message--user--background: var(--chat--color-secondary);
+                --chat--message--user--color: var(--chat--color-white);
+
+
+                --chat--toggle--background: var(--chat--color-primary);
+                --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+                --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+                --chat--toggle--color: var(--chat--color-white);
+
+
+                --chat--header--background: var(--chat--color-dark);
+                --chat--header--color: var(--chat--color-white);
+        }
+
+
+    
+        #n8n-chat,
+        .n8n-chat-container,
+        .n8n-chat-bubble,
+        .n8n-chat-user-bubble,
+        .n8n-chat-footer input {
+                direction: rtl !important;
+                text-align: right !important;
+                font-family: 'Tajawal', sans-serif;
+        }
+</style>
+
+
+
+<script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+
+        createChat({
+                webhookUrl: 'https://saifnagadia.app.n8n.cloud/webhook/024fb15e-9ab3-45f2-8095-1a33ad8d469d/chat',
+                defaultLanguage: 'en',
+                initialMessages: [
+                        'Hello , iam Saif - Nagadia ai assistant , How Can i help You ?👋',
+                        ' ؟'
+                ],
+                i18n: {
+                        ar: {
+                                title:'HI 👋',
+                                subtitle: 'Start chat.',
+                                inputPlaceholder: 'Ask Me ',
+                                getStarted:'?????'
+                        }
+                }
+        });
+</script>
+
+
+
+<div id="n8n-chat"></div>
+
 
