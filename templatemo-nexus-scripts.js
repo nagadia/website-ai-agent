@@ -484,7 +484,7 @@ https://templatemo.com/tm-594-nexus-flow
             this.style.background = 'rgba(22, 145, 11, 1)';
 
             // ===== WhatsApp Redirect =====
-            const phoneNumber = "201234567890"; // رقمك مع كود الدولة
+            const phoneNumber = "201008033261"; // رقمك مع كود الدولة
             const text ="Name : "+ name + " "+"Email : "+email+" "+"Whatsapp : "+whatsapp+" "+"message : "+" "+message
 
 
@@ -508,5 +508,6 @@ https://templatemo.com/tm-594-nexus-flow
         }, 3000);
     }
 });
+
 
 
