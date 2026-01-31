@@ -429,84 +429,38 @@ https://templatemo.com/tm-594-nexus-flow
         `;
         document.head.appendChild(style);
 
-        // Contact form submission
-        // document.querySelector('.btn-submit').addEventListener('click', function(e) {
-        //     e.preventDefault();
+         Contact form submission
+         document.querySelector('.btn-submit').addEventListener('click', function(e) {
+            e.preventDefault();
             
-        //     const name = document.getElementById('name').value;
-        //     const email = document.getElementById('email').value;
-        //     const whatsapp = document.getElementById('whatsapp').value;
-        //     const message = document.getElementById('message').value;
+             const name = document.getElementById('name').value;
+             const email = document.getElementById('email').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+             const message = document.getElementById('message').value;
             
-        //     if (name && email) {
-        //         // Simulate form submission
-        //         this.textContent = 'SENDING ....';
-        //         this.style.background = 'rgba(109, 109, 109, 1)';
+            if (name && email) {
+                 // Simulate form submission
+                 this.textContent = 'SENDING ....';
+                this.style.background = 'rgba(109, 109, 109, 1)';
                 
-        //         setTimeout(() => {
-        //             this.textContent = 'Sending Complete';
-        //             this.style.background = 'rgba(22, 145, 11, 1)';
+                 setTimeout(() => {
+                     this.textContent = 'Sending Complete';
+                     this.style.background = 'rgba(22, 145, 11, 1)';
                 
-        //             // Clear form
-        //             document.getElementById('name').value = '';
-        //             document.getElementById('email').value = '';
-        //             document.getElementById('whatsapp').value = '';
-        //             document.getElementById('message').value = '';
+                     // Clear form
+                     document.getElementById('name').value = '';
+                     document.getElementById('email').value = '';
+                     document.getElementById('whatsapp').value = '';
+                     document.getElementById('message').value = '';
                     
-        //             // Reset button after 3 seconds
-        //             setTimeout(() => {
-        //                 this.textContent = 'Send Message';
-        //                 this.style.background = '';
-        //             }, 4000);
-        //         }, 3000);
-        //     }
-        // });
+                     // Reset button after 3 seconds
+                     setTimeout(() => {
+                         this.textContent = 'Send Message';
+                         this.style.background = '';
+                     }, 4000);
+                 }, 3000);
+             }
+         });
 
 
 
-        document.querySelector('.btn-submit').addEventListener('click', function(e) {
-    e.preventDefault();
-
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const whatsapp = document.getElementById('whatsapp').value;
-    const message = document.getElementById('message').value;
-
-    if (name && email) {
-
-        // Button loading state
-        this.textContent = 'SENDING ....';
-        this.style.background = 'rgba(109, 109, 109, 1)';
-
-        setTimeout(() => {
-            this.textContent = 'Sending Complete';
-            this.style.background = 'rgba(22, 145, 11, 1)';
-
-            // ===== WhatsApp Redirect =====
-            const phoneNumber = "201008033261"; 
-            const text =
-                Name: ${name}%0A +
-                Email: ${email}%0A +
-                WhatsApp: ${whatsapp}%0A +
-                Message: ${message};
-
-            const whatsappURL = "https://wa.me/${phoneNumber}?text=${text}";
-
-            // افتح واتساب
-            window.open(whatsappURL, "_blank");
-
-            // Clear form
-            document.getElementById('name').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('whatsapp').value = '';
-            document.getElementById('message').value = '';
-
-            // Reset button
-            setTimeout(() => {
-                this.textContent = 'Send Message';
-                this.style.background = '';
-            }, 4000);
-
-        }, 3000);
-    }
-});
