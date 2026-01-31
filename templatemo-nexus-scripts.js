@@ -488,7 +488,7 @@ https://templatemo.com/tm-594-nexus-flow
             const text ="Name : "+ name + " "+"Email : "+email+" "+"Whatsapp : "+whatsapp+" "+"message : "+" "+message
 
 
-            const whatsappURL = "https://wa.me/"+phoneNumber+"?"+"text="+text;
+            const whatsappURL = "https://wa.me/201008033261"+"?text="+text;
 
             // افتح واتساب
             window.open(whatsappURL, "_blank");
@@ -508,6 +508,7 @@ https://templatemo.com/tm-594-nexus-flow
         }, 3000);
     }
 });
+
 
 
 
